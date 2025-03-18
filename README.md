@@ -111,14 +111,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'your-dockerhub-username/test-project'
+        DOCKER_IMAGE = 'edwardokoto1/e-commerce-website'
     }
 
     stages {
         stage('Checkout Code') {
             steps {
                 echo 'Cloning repository from GitHub...'
-                git branch: 'main', url: 'https://github.com/<your-username>/TestProject.git'
+                git branch: 'main', url: 'https://github.com/Edward-okoto/e-commerce-website.git'
             }
         }
 
