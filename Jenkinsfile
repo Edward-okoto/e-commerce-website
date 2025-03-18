@@ -3,7 +3,7 @@ pipeline {
 
     // Specify tools required by the pipeline
     tools {
-        maven 'Maven3'  // Reference the Maven installation configured in Jenkins
+        maven 'Maven3.9.9'  // Reference the Maven installation configured in Jenkins
     }
 
     // Set environment variables
