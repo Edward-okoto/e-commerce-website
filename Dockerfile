@@ -1,3 +1,8 @@
+# Use a lightweight Java runtime image
 FROM openjdk:11-jre-slim
-COPY target/demo-1.0-SNAPSHOT.jar /app.jar
+
+# Copy the Spring Boot jar from the target folder into the container
+COPY target/demo-0.0.1-SNAPSHOT.jar /app.jar
+
+# Specify the command to run the jar
 ENTRYPOINT ["java", "-jar", "/app.jar"]
